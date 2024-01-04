@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Главная</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="CW">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	font: 12pt &quot;Verdana&quot;;
+}
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="VL">
+      <item>
+       <layout class="QHBoxLayout" name="Info">
+        <item>
+         <widget class="QLabel" name="MailIndex">
+          <property name="font">
+           <font>
+            <family>Verdana</family>
+            <pointsize>12</pointsize>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Почтовый индек:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Mail">
+          <property name="text">
+           <string>{test@mail.com}</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="AvailableLetters">
+        <property name="text">
+         <string>Доступыные письма:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="Letters"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="ControlPanel">
+        <item>
+         <widget class="QPushButton" name="SaveLatter">
+          <property name="text">
+           <string>Сохранить письмо</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="GenerateMail">
+          <property name="text">
+           <string>Сгенерировать новую почту</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
