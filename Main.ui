@@ -39,7 +39,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Почтовый индек:</string>
+           <string>Адрес электронной почты:</string>
           </property>
          </widget>
         </item>
@@ -58,7 +58,7 @@
       <item>
        <widget class="QLabel" name="AvailableLetters">
         <property name="text">
-         <string>Доступыные письма:</string>
+         <string>Доступные письма:</string>
         </property>
        </widget>
       </item>
